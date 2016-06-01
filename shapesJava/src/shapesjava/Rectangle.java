@@ -34,6 +34,12 @@ public int getArea(){
     calculateArea();
     return area;
 }
+public int getHeight(){
+    return height;
+}
+public int getWidth(){
+    return width;
+}
 private void calculateCircumfrance(){
     circumfrance = 2*height+2*width;
     
