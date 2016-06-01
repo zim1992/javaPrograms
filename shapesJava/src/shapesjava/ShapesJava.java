@@ -27,7 +27,7 @@ public class ShapesJava {
             System.out.println("Please state which shape you would like to interact with first\n"
                             + "1) Right Triangle\n"
                             + "2) Rectangle\n"//done
-                            + "3) Square\n"
+                            + "3) Square\n"//done
                             + "4) To exit the program\n");
             System.out.print("Please place the the menu option here:");
             shapeInteration = keyboard.nextInt();
@@ -92,12 +92,20 @@ public class ShapesJava {
                         System.out.print("Please type out your option:");
                         int squareSelection = keyboard.nextInt();
                         switch(squareSelection){
-                            case 1:
+                            case 1: System.out.println("length of square is: "+square.getHeight());
                                     break;
-                            case 2:
+                            case 2: System.out.println("You will be editing length of the of the square. Please type out the new length");
+                                    int length = keyboard.nextInt();
+                                    square.set(length);
                                     break;
-                            case 3:
+                            case 3: square.drawHere();
                                     break;
+                            case 4: System.out.println("The area of the square is: "+square.getArea());
+                                    break;
+                            case 5: System.out.println("The curcumferance of the square is: "+square.getCircumfrance());
+                                    break;
+                            default:System.err.println("ERROR: The following option doesn't exist. Exiting to main menu ...");
+                                    break;                        
                         }
                         break;
                 case 4: programExiter = true;
