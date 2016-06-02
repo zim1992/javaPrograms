@@ -9,7 +9,18 @@ package shapesjava;
  *
  * @author Corjan
  */
-public class RightTriangle extends ShapeBasics {
+public class RightTriangle extends ShapeBasics implements TriangleInterface{
+    private int height;
+    private int base;
+    public RightTriangle(int height, int base){
+        this.height = height;
+        this.base = base;
+    }
+
+    @Override
+    public void set(int newBase) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
         
     
