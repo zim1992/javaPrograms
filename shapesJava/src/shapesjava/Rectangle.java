@@ -56,7 +56,7 @@ public Rectangle(int theOffset, int theHeight, int theWidth){
 public void set(int newHeight,int newWidth){        
     height = newHeight;
     width = newWidth;
-} 
+}
  public void drawHere(){
      drawHorizontalLine();
      drawSides();
@@ -70,8 +70,7 @@ public void set(int newHeight,int newWidth){
  } 
 private void drawSides(){
      for (int count = 0; count < (height - 2); count++)
-         drawOneLineOfSides();
-    
+         drawOneLineOfSides();    
 } 
 private void drawOneLineOfSides(){
     skipSpaces(getOffset());
