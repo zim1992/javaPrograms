@@ -54,5 +54,8 @@ public class SubstitutionCipher implements MessageDecoder,  MessageEncoder{
     public String getEncodedMessage(){
         return encodedMessage;
     }
+    public int getShifter(){
+        return shifter;
+    }
     
 }
