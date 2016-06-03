@@ -44,7 +44,7 @@ private void calculateCircumfrance(){
     circumfrance = 2*height+2*width;
     
 }
-public int getCircumfrance(){
+public int getCircumference(){
     calculateCircumfrance();
     return circumfrance;
 }

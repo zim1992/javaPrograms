@@ -14,5 +14,5 @@ public interface TriangleInterface extends ShapeInterface
     /**
      * Sets the triangle's base.
      */
-    public void set(int newBase); 
+    public void set(int newBase, int newHeight); 
 }
