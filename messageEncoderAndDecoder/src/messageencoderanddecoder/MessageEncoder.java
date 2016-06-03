@@ -9,6 +9,7 @@ package messageencoderanddecoder;
  *
  * @author corjan
  */
-public class MessageEncoder {
+public interface MessageEncoder {
+    public void encode(String cipherText);
     
 }

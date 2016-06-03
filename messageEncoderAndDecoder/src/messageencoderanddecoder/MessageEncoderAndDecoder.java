@@ -15,7 +15,9 @@ public class MessageEncoderAndDecoder {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String sent = "Hello World";
+        String sent = "Hello World This is me";
+        SubstitutionCipher message = new SubstitutionCipher();
+        message.decode(sent);
         char [] sentToChar = sent.toCharArray();
         char [] shift;
         String newString="";
@@ -26,8 +28,6 @@ public class MessageEncoderAndDecoder {
             }else{
                 newString=newString+((char) (3+(int) oldLetter));                
             }
-            
-            
         }
             
         System.out.println(newString);
