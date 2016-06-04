@@ -72,23 +72,35 @@ public void set(int newHeight,int newWidth){
      drawSides();
      drawHorizontalLine();
  } 
+ /**
+  * This method is used draw the horizonal lines of the rectangle.
+  */
  private void drawHorizontalLine(){
     skipSpaces(getOffset());
     for (int count = 0; count < width; count++)
         System.out.print('-');        
     System.out.println();    
- } 
+ }
+ /**
+  * This method is used set the two lines for the rectangle. 
+  */
 private void drawSides(){
      for (int count = 0; count < (height - 2); count++)
          drawOneLineOfSides();    
 } 
+/**
+ * This method draws the vertical lines. 
+ */
 private void drawOneLineOfSides(){
     skipSpaces(getOffset());
     System.out.print('|');
     skipSpaces(width - 2);
     System.out.println('|');
 }
-//Writes the indicated number of spaces. 
+/**
+ * Is used to skip spaces between the vertical lines
+ * @param number - number of spaces which need to skipped. 
+ */
 private static void skipSpaces(int number){ 
     for (int count = 0; count < number; count++)
     System.out.print(' ');    
