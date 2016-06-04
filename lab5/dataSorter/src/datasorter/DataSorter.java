@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package datasorter;
+import java.io.File;
 import java.io.PrintWriter;
 import java.io.FileNotFoundException;
 
@@ -18,8 +19,9 @@ public class DataSorter {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String fileName="";
-        // TODO code application logic here
+       
+        String fileName="numberfile.txt";
+         File f = new File(fileName);
     }
     
 }
