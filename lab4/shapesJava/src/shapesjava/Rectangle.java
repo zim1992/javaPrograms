@@ -21,11 +21,17 @@ public Rectangle(){
     height = 0; 
     width = 0;
 }
+
 public Rectangle(int height, int width){
     super();
     this.height = height;
     this.width = width;
     
+}
+public Rectangle(int theOffset, int theHeight, int theWidth){
+    super(theOffset); 
+    height = theHeight; 
+    width = theWidth; 
 }
 private void calculateArea(){
     area = width*height;    
@@ -44,15 +50,19 @@ private void calculateCircumfrance(){
     circumfrance = 2*height+2*width;
     
 }
+/**
+ * Calculates the circumference before returning the variable. 
+ * @return - The circumference of the Rectangle
+ */
 public int getCircumference(){
     calculateCircumfrance();
     return circumfrance;
 }
-public Rectangle(int theOffset, int theHeight, int theWidth){
-    super(theOffset); 
-    height = theHeight; 
-    width = theWidth; 
-}
+/**
+ * Used to set the new height and width for the Rectangle
+ * @param newHeight - height of the Rectangle
+ * @param newWidth  - Width of the rectangle 
+ */
 public void set(int newHeight,int newWidth){        
     height = newHeight;
     width = newWidth;
