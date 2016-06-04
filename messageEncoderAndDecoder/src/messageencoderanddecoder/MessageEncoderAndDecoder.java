@@ -19,7 +19,7 @@ public class MessageEncoderAndDecoder {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
         String sent = "Hello World This is me";
-        SubstitutionCipher message = new SubstitutionCipher();
+        SubstitutionCipher message = new SubstitutionCipher(4);
         message.decode(sent);
         System.out.println("This Program will be used to decode and encode messages");
         boolean programExiter = false;
