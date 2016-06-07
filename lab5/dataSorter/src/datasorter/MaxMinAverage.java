@@ -29,6 +29,7 @@ public class MaxMinAverage {
                 counter++;
                 int num = Integer.parseInt(file.nextLine());
                 sumTotal+=num;
+                // Searches for the number which 
                 if(num>max){
                     max =num;
                 }
