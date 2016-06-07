@@ -4,9 +4,6 @@
  * and open the template in the editor.
  */
 package datasorter;
-import java.io.File;
-import java.io.PrintWriter;
-import java.io.FileNotFoundException;
 
 /**
  *
@@ -21,7 +18,9 @@ public class DataSorter {
     public static void main(String[] args) {
        
         String fileName="numberfile.txt";
-         File f = new File(fileName);
+        MaxMinAverage numbersorter = new MaxMinAverage (fileName);
+        System.out.println("");
+        
     }
     
 }
