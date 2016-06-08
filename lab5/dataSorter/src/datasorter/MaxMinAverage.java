@@ -17,6 +17,12 @@ public class MaxMinAverage {
     private int max;
     private int min;
     private double average;
+    /**
+     * This takes the Numbers in the file and searches for the Maximum and Minimum value.
+     * It also calculates the average using all the digits.
+     * The Maximum, Minimum and Average values are stored as global variables. 
+     * @param filename 
+     */
     public MaxMinAverage(String filename){
         try{
             File f = new File(filename);
@@ -40,7 +46,6 @@ public class MaxMinAverage {
             average = sumTotal/counter;
             this.max=max;
             this.min=min;
-            
         }catch(FileNotFoundException e){
             System.err.println("ERROR: opening file");
             System.exit(0);

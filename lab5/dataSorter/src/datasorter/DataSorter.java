@@ -12,11 +12,6 @@ import java.util.Scanner;
  * @author corjan
  */
 public class DataSorter {
-    
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
         String fileName="numberfile.txt";
@@ -24,6 +19,7 @@ public class DataSorter {
         RemovalNumber removeNum = new RemovalNumber(fileName);
         System.out.println("We have sorted the text file and you have the ability to get stats of the file\n");
         boolean exiter = false;
+        // Gives the user the ability to see the Maximum, Minimum and average values. 
         while(!exiter){
             System.out.println("Please use the following menu to find out the stats of the file\n\n"
                         + "1) Minimum Value\n"
