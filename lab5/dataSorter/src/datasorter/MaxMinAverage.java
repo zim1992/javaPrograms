@@ -36,7 +36,6 @@ public class MaxMinAverage {
                 if(num<min){
                     min=num;
                 }
-                
             }
             average = sumTotal/counter;
             this.max=max;

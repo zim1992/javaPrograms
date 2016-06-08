@@ -21,6 +21,7 @@ public class DataSorter {
         Scanner keyboard = new Scanner(System.in);
         String fileName="numberfile.txt";
         MaxMinAverage numbersorter = new MaxMinAverage (fileName);
+        RemovalNumber removeNum = new RemovalNumber(fileName);
         System.out.println("We have sorted the text file and you have the ability to get stats of the file\n");
         boolean exiter = false;
         while(!exiter){
