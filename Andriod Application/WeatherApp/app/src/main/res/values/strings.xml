@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="Welcome">WELCOME</string>
+    <string name="welcome_message">Welcome to the Weather Application</string>
+    <string name="city_name">City/Country</string>
+    <string name="search">Search</string>
+    <string name="random">Random Button</string>
+    <string name="days">Number of days forcast</string>
+</resources>
